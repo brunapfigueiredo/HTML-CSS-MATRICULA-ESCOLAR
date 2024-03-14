@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRÍCULA</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <fieldset>
+
+        <legend>INFORMAÇÕES ACADÊMICAS</legend>
+
+        <div class="container">
+            <div class="form-image">
+                <img src="assets/img/educator.svg">
+            </div>
+            <div class="form">
+                <form action="#" onsubmit="return validFormulario()">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Matricule-se!</h1>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="nome">Série</label>
+                            <select id="serie" name="serie" required>
+                                <option value="1">1º Ensino Médio</option>
+                                <option value="2">2º Ensino Médio</option>
+                                <option value="3">3º Ensino Médio</option>
+                                <option value="4">4º Ensino Médio</option>
+                            </select>
+                        </div>
+
+                            <div>
+                        <div class="turno-inputs">
+                            <div class="turno-title">
+                                <label for="turno">Turno Preferencial:</label>
+                            </div>
+                        </div>
+
+                        <div class="turno-group">
+                            <div class="turno-input">
+                                <input type="radio" id="manha" name="turno">
+                                <label for="manha">Manhã</label>
+                            </div>
+
+                            <div class="turno-input">
+                                <input type="radio" id="tarde" name="turno">
+                                <label for="tarde">Tarde</label>
+                            </div>
+
+                            <div class="turno-input">
+                                <input type="radio" id="noite" name="turno">
+                                <label for="noite">Noite</label>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="atv-inputs">
+                            <label for="email">Atividades Extra-Curriculares:</label>
+
+                            <div class="checkbox-group">
+                                <div class="checkbox-input">
+                            <label for="teatro">Teatro</label>
+                            <input type="checkbox" id="teatro" name="atividades" value="teatro">
+                                </div>
+
+                                <div class="checkbox-input">
+                            <label for="musica">Música</label>
+                            <input type="checkbox" id="musica" name="atividades" value="musica">
+                            </div>
+
+                            <div class="checkbox-input">
+                            <label for="ballet">Ballet</label>
+                            <input type="checkbox" id="ballet" name="atividades" value="ballet">
+                                </div>
+
+                                <div class="checkbox-input">
+                            <label for="pintura">Pintura</label>
+                            <input type="checkbox" id="pintura" name="atividades" value="pintura">
+                            </div>
+
+                            <div class="checkbox-input">
+                            <label for="judo">Judô</label>
+                            <input type="checkbox" id="judo" name="atividades" value="judo">
+                            </div>
+
+                            <div class="checkbox-input">
+                            <label for="futebol">Futebol</label>
+                            <input type="checkbox" id="futebol" name="atividades" value="futebol">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="continue-button">
+                        <button type="submit">Continuar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </fieldset>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
